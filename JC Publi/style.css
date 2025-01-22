@@ -1,0 +1,258 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #db0b5b;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo geral */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #db0b5b;
+    color: white;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.cta-btn {
+    background: #1b1b1b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Botão de menu (hambúrguer) */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Layout para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo-container {
+        order: 1; /* Mantém a logo no canto esquerdo */
+        margin-right: auto;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 3; /* Posiciona o menu no canto direito */
+        position: relative;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: #db0b5b;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .cta-btn {
+        order: 2; /* Centraliza o botão entre logo e menu */
+        margin: 10px auto;
+    }
+}
+
+
+.cta-btn {
+    background: #1b1b1b;
+    padding: 20px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #333;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('hero-image.jpg') no-repeat center/cover;
+    color: rgb(44, 5, 5);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.services, .portfolio {
+    padding: 20px;
+    text-align: center;
+}
+
+.services h2, .portfolio h2 {
+    margin-bottom: 20px;
+}
+
+.services .service-item, .portfolio .project {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1b1b1b;
+    color: white;
+}
+
+.testimonials {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Seção "Entrar em Contato" */
+.contact {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #db0b5b;
+}
+
+.contact p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    text-align: left;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background: #db0b5b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact form button:hover {
+    background: #a30945;
+}
+
+/* Botão do WhatsApp */
+.whatsapp-btn {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background: #1aa64a;
+}
