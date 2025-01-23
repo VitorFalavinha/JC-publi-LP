@@ -125,6 +125,13 @@ header {
         order: 2; /* Centraliza o botão entre logo e menu */
         margin: 10px auto;
     }
+
+    .services .service-item, .portfolio .project .imagem {
+    
+        border-radius: 20px;
+        width: 20%;
+    }
+    
 }
 
 
