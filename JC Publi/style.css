@@ -177,6 +177,12 @@ header {
     border-radius: 10px;
 }
 
+.services .service-item, .portfolio .project .imagem {
+    
+    border-radius: 20px;
+    width: 65%;
+}
+
 footer {
     text-align: center;
     padding: 20px;
