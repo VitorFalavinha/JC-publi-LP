@@ -8,6 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const menuClose = document.querySelector('.menu-close');
+    const menu = document.querySelector('.menu');
+
+    menuClose.addEventListener('click', () => {
+        menu.classList.remove('show');
+    });
+});
+
+
 
 
 document.addEventListener('DOMContentLoaded', () => {

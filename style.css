@@ -114,6 +114,17 @@ header a:hover {
     .menu.show {
         display: flex;
     }
+    .menu-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    
 
     .menu a {
         color: white;
